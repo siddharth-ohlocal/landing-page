@@ -1,0 +1,187 @@
+.Explore {
+    /* display: grid; */
+    /* grid-template-rows: auto auto auto !important; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../assets/bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Explore text */
+.Explore .explore-text {
+    display: flex;
+    flex-direction: column;
+    color: #dfdca9;
+    font-weight: 600;
+    margin-top: 150px;
+}
+
+.explore-text .text-1 {
+    font-size: 30px;
+}
+
+.explore-text .text-2 {
+    font-size: 90px;
+}
+
+.explore-text .text-3 {
+    font-size: 90px;
+}
+
+.explore-text .text-4 {
+    font-size: 20px;
+}
+
+
+/* Explore Buttons */
+.explore-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.download-btn {
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-right: 20px;
+}
+
+.explore-btn {
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+.explore-buttons span {
+    transition: transform .1s;
+    cursor: pointer;
+}
+
+.explore-buttons span:hover {
+    transform: scale(1.1);
+}
+
+
+/* Explore Image */
+.explore-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.explore-image img {
+    width: 800px;
+    /* object-fit: cover; */
+}
+
+
+@media (max-width:989px) {
+    .explore-image img {
+        width: 600px;
+    }
+}
+
+
+@media (max-width:782px) {
+    .Explore .explore-text {
+        margin-top: 100px;
+    }
+
+    /* Span Tag */
+    .Explore .explore-text span:nth-child(1) {
+        font-size: 22px;
+    }
+
+    /* Span Tag */
+    .Explore .explore-text span:nth-child(2) {
+        font-size: 55px;
+    }
+
+    /* Span Tag */
+    .Explore .explore-text span:nth-child(3) {
+        font-size: 55px;
+    }
+
+    /* Span Tag */
+    .Explore .explore-text span:nth-child(4) {
+        font-size: 12px;
+    }
+
+    /* Download */
+    .Explore .explore-buttons .download-btn {
+        font-size: 16px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        align-self: center;
+    }
+
+    /* Explore */
+    .Explore .explore-buttons .explore-btn {
+        align-self: center;
+        font-size: 16px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    /* Explore image */
+    .App .Explore .explore-image {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        width: 400px;
+    }
+
+}
+
+
+@media (max-width:640px) {
+
+    /* Image */
+    .Explore .explore-image img {
+        width: 450px;
+    }
+
+}
+
+
+@media (max-width:510px) {
+
+    .Explore .explore-text .text-1 {
+        font-size: 20px !important;
+    }
+
+    .Explore .explore-text .text-2 {
+        font-size: 50px !important;
+    }
+
+    .Explore .explore-text .text-3 {
+        font-size: 50px !important;
+    }
+
+    .Explore .explore-text .text-4 {
+        font-size: 11px !important;
+    }
+
+    .Explore .explore-image img {
+        width: 360px;
+    }
+
+    .App .Explore .explore-image {
+        margin-top: 120px;
+        margin-bottom: 100px;
+    }
+
+    .App .Explore .explore-text {
+        margin-top: 120px;
+    }
+}

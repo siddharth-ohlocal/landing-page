@@ -1,0 +1,85 @@
+.Categories {
+    padding: 40px 100px 80px;
+    background: url("../../assets/bg-category.jpg");
+}
+
+.Categories .title {
+    font-size: 30px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.Categories .icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Categories .icons img {
+    width: 120px;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.Categories .icons img:hover {
+    transform: scale(1.5);
+}
+
+
+@media (max-width:989px) {
+    .Categories {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .Categories .icons img {
+        width: 100px;
+    }
+}
+
+
+@media (max-width:782px) {
+    .Categories span {
+        margin-bottom: 20px;
+        font-size: 28px;
+    }
+
+    .Categories {
+        padding-bottom: 60px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .Categories .icons img {
+        width: 80px;
+    }
+}
+
+
+@media (max-width:640px) {
+
+    .App .Categories {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .App .Categories span {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .Categories .icons img {
+        width: 60px;
+    }
+}
+
+@media (max-width:510px) {
+    /* .Categories .icons img {
+        width: 50px;
+    } */
+
+    #root .App .Categories {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

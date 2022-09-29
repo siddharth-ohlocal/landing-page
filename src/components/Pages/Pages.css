@@ -1,0 +1,144 @@
+.Pages .section {
+    background-size: cover !important;
+    background: no-repeat;
+    position: relative;
+}
+
+
+/* Text Area */
+.section-text {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    transform: translateY(-50%);
+}
+
+.section-text .head {
+    font-size: 70px;
+    font-weight: 600;
+    color: #dfdca9;
+}
+
+.section-text .subhead {
+    font-size: 28px;
+    font-weight: 300;
+    color: #dfdca9;
+    width: 60%;
+}
+
+/* Button */
+.section-text .button {
+    align-self: flex-start;
+    background-color: #ffffff;
+    padding: 6px 15px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+
+@media (max-width:989px) {
+    .section {
+        height: 541px;
+    }
+
+    .section .section-text {
+        margin-left: 60px;
+    }
+
+    .section .head {
+        font-size: 60px;
+    }
+
+    .section .subhead {
+        font-size: 20px;
+    }
+
+    .section img {
+        height: 526px !important;
+    }
+}
+
+
+@media (max-width:902px) {
+    .section .head {
+        font-size: 50px;
+    }
+}
+
+
+@media (max-width:782px) {
+
+    .section .section-text {
+        margin-left: 40px;
+    }
+
+    .section .head {
+        font-size: 45px;
+    }
+
+    .section .subhead {
+        font-size: 16px;
+    }
+
+    .section {
+        height: 448px;
+    }
+
+    .section img {
+        height: 396px !important;
+        width: 454px;
+        visibility: hidden;
+    }
+}
+
+
+@media (max-width:640px) {
+
+    .Pages .section .head {
+        font-size: 40px;
+    }
+
+    .Pages .section .subhead {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width:510px) {
+
+    .App .Pages .section {
+        width: 50x;
+        min-height: 750px;
+    }
+
+    .Pages .section img {
+        display: inline-block;
+        width: 315px;
+        min-height: 716px;
+    }
+
+    .App .Pages .section:nth-child(1) {
+        background-image: url("../../assets/phone-screen/section1-mobile.jpg") !important;
+    }
+
+    .App .Pages .section:nth-child(2) {
+        background-image: url("../../assets/phone-screen/section2-mobile.jpg") !important;
+    }
+
+    .Pages .section .section-text {
+        top: 40%;
+    }
+
+    .Pages .section .subhead {
+        width: 85%;
+    }
+
+    .Pages .section .button {
+        position: relative;
+        top: 230px;
+    }
+}
